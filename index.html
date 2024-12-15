@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NFT Commercial - La piattaforma per la compravendita di NFT">
+    <title>NFT Commercial</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 10px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo-container img {
+            max-width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .logo-container h1 {
+            font-size: 24px;
+            margin: 0;
+            font-weight: 600;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 10%;
+            background: linear-gradient(to right, #8e44ad, #3498db);
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 48px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .hero button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #2c3e50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .hero button:hover {
+            background-color: #34495e;
+        }
+        .carousel {
+            position: relative;
+            max-width: 60%;
+            margin: 50px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 300px;
+        }
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-images img {
+            min-width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .carousel-buttons button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .carousel-buttons button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+        .featured-products {
+            text-align: center;
+            padding: 50px 10%;
+            background-color: #f9f9f9;
+        }
+        .product-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 {
+            margin: 15px 0 10px;
+        }
+        .product p {
+            color: #666;
+        }
+        .product button {
+            padding: 10px 20px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #34495e;
+        }
+        .security, .reviews {
+            padding: 50px 10%;
+            text-align: center;
+        }
+        .security h2, .reviews h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .security p, .reviews p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+        .reviews .testimonial-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .review {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .review p {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .review h4 {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="IMG/Logo PNG.png" alt="Logo NFT Commercial">
+        <h1>NFT Commercial</h1>
+    </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Chi siamo</a>
+        <a href="#">Contatti</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Benvenuti su NFT Commercial</h1>
+    <p>Scopri, compra e vendi NFT unici e irripetibili. Il tuo mercato digitale di fiducia.</p>
+    <button onclick="location.href='#'">Esplora ora</button>
+</section>
+
+<section class="carousel">
+    <div class="carousel-images">
+        <img src="IMG/pngtree-crypto-twitter-header-bitcoin-photos---image_16097681.jpg" alt="Immagine 1">
+        <img src="IMG/banner-nft-industry-one-point-600nw-2229000561.webp" alt="Immagine 2">
+        <img src="IMG/draw-an-eye-catching-cartoon-tshirt-design.jpg" alt="Immagine 3">
+    </div>
+    <div class="carousel-buttons">
+        <button id="prevBtn">❮</button>
+        <button id="nextBtn">❯</button>
+    </div>
+</section>
+
+<section class="featured-products">
+    <h2>Prodotti in evidenza</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="IMG/nft1.jpg" alt="NFT 1">
+            <h3>Emby</h3>
+            <p>Prezzo: 1.5 ETH</p>
+            <button>Acquista ora</button>
+        </div>
+        <div class="product">
+            <img src="IMG/nft2.jpg" alt="NFT 2">
+            <h3>CozaZuki</h3>
+            <p>Prezzo: 2.0 ETH</p>
+            <button>Acquista ora</button>
+        </div>
+        <div class="product">
+            <img src="IMG/nft3.jpg" alt="NFT 3">
+            <h3>Monkey</h3>
+            <p>Prezzo: 0.8 ETH</p>
+            <button>Acquista ora</button>
+        </div>
+    </div>
+</section>
+
+<section class="security">
+    <h2>Sicurezza nei pagamenti</h2>
+    <p>Su NFT Commercial, garantiamo transazioni sicure con le più moderne tecnologie di crittografia, proteggendo i tuoi dati e le tue operazioni ogni volta che acquisti o vendi un NFT. Puoi sempre fidarti della nostra piattaforma per un'esperienza di acquisto e vendita senza preoccupazioni.</p>
+</section>
+
+<section class="reviews">
+    <h2>Cosa dicono i nostri utenti</h2>
+    <div class="testimonial-grid">
+        <div class="review">
+            <p>"NFT Commercial è il miglior marketplace che ho provato. Ho venduto il mio primo NFT in pochi giorni!"</p>
+            <h4>- Marco B.</h4>
+        </div>
+        <div class="review">
+            <p>"Un'esperienza fantastica! La piattaforma è intuitiva e facile da usare."</p>
+            <h4>- Devis U.</h4>
+        </div>
+        <div class="review">
+            <p>"Mi piace moltissimo la varietà di NFT disponibili. Ottimo servizio clienti."</p>
+            <h4>- Filippo T.</h4>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2024 NFT Commercial. Tutti i diritti riservati.</p>
+</footer>
+
+<script>
+    const carouselImages = document.querySelector('.carousel-images');
+    const images = document.querySelectorAll('.carousel-images img');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        const width = images[0].clientWidth;
+        carouselImages.style.transform = `translateX(-${currentIndex * width}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateCarousel();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateCarousel();
+    });
+
+    window.addEventListener('resize', updateCarousel);
+</script>
+
+</body>
+</html>
